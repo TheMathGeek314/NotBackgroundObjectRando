@@ -1,5 +1,7 @@
 ﻿using System;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using ItemChanger;
 using RandomizerCore;
 using RandomizerCore.Logic;
@@ -16,20 +18,32 @@ namespace NotBackgroundObjectRando {
         private static void ApplyLogic(GenerationSettings gs, LogicManagerBuilder lmb) {
             if(!NotBackgroundObjectRando.globalSettings.Enabled)
                 return;
+            Assembly assembly = Assembly.GetExecutingAssembly();
+            string resourceName = assembly.GetManifestResourceNames().Single(str => str.EndsWith("ManualLogic.json"));
+            using Stream stream = assembly.GetManifestResourceStream(resourceName);
+            ManualLogicJson.AllClauses.Clear();
+            foreach(ManualLogicJson manlog in new ParseJson(stream).parseFile<ManualLogicJson>()) {
+                manlog.store();
+            }
             foreach(BackgroundObjectJson bgObj in BackgroundObjectJson.allObjects) {
                 string icName = RandoInterop.GetPlacementName(bgObj);
                 Term term = lmb.GetOrAddTerm(icName, TermType.Int);
                 lmb.AddItem(new SingleItem(icName, new TermValue(term, 1)));
                 string clause = "";
-                string myScene = bgObj.scene == SceneNames.Crossroads_10_boss_defeated ? SceneNames.Crossroads_10 : bgObj.scene;
-                foreach(string t in lmb.Transitions.Where(transition => transition.StartsWith(myScene + "["))) {
-                    clause += t + " | ";
+                if(ManualLogicJson.AllClauses.TryGetValue(icName, out string logic)) {
+                    clause = $"({logic})";
                 }
-                clause = informUnusualSceneLogic(clause, myScene);
+                else {
+                    string myScene = bgObj.scene == SceneNames.Crossroads_10_boss_defeated ? SceneNames.Crossroads_10 : bgObj.scene;
+                    foreach(string t in lmb.Transitions.Where(transition => transition.StartsWith(myScene + "["))) {
+                        clause += t + " | ";
+                    }
+                    clause = informUnusualSceneLogic(clause, myScene);
+                    if(bgObj.requiresInfection)
+                        clause += " + DREAMER";
+                }
                 if(NotBackgroundObjectRando.globalSettings.LockBehindItems)
                     clause += " + " + icName;
-                if(bgObj.requiresInfection)
-                    clause += " + DREAMER";
                 lmb.AddLogicDef(new(icName, clause));
             }
         }

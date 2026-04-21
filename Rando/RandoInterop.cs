@@ -6,9 +6,11 @@ using UnityEngine;
 using ItemChanger;
 using ItemChanger.Locations;
 using ItemChanger.Tags;
+using RandomizerCore.Logic;
 using RandomizerMod.Logging;
 using RandomizerMod.RandomizerData;
 using RandomizerMod.RC;
+using RandomizerMod.Settings;
 
 namespace NotBackgroundObjectRando{
     public static class RandoInterop {
@@ -32,7 +34,7 @@ namespace NotBackgroundObjectRando{
             if(!NotBackgroundObjectRando.globalSettings.Enabled || !NotBackgroundObjectRando.globalSettings.LockBehindItems)
                 return;
             ItemChangerMod.Modules.GetOrAdd<NborModule>();
-            error;//RandomizerMod TransitionSettings -> UpdateStartLocation...
+            ProgressionInitializer.OnCreateProgressionInitializer += DisablePogos;
         }
 
         private static void LogRandoSettings(LogArguments args, TextWriter w) {
@@ -96,6 +98,13 @@ namespace NotBackgroundObjectRando{
             tag.Message = "RandoSupplementalMetadata";
             tag.Properties["ModSource"] = NotBackgroundObjectRando.instance.GetName();
             return tag;
+        }
+
+        private static void DisablePogos(LogicManager lm, GenerationSettings gs, ProgressionInitializer pi) {
+            if(!NotBackgroundObjectRando.globalSettings.Enabled || !NotBackgroundObjectRando.globalSettings.LockBehindItems)
+                return;
+            pi.Setters.Add(new(lm.GetTerm("BACKGROUNDPOGOS"), 0));
+            pi.Setters.Add(new(lm.GetTerm("INFECTIONSKIPS"), 0));
         }
     }
 }

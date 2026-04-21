@@ -45,8 +45,9 @@ namespace NotBackgroundObjectRando {
             infectedBgObjInformation.Clear();
             await EverySceneUtil.EverySceneUtil.ForEveryScene(p, KeyCode.O);
             foreach(var data in backgroundObjectInformation) {
-                Log("{"+$"\t\"scene\": \"{data.Item1}\",\"type\": \"{data.Item2}\",\"name\": \"{data.Item3}\",\"x\":{data.Item4},\"y\": {data.Item5},\"requiresInfection\": false"+"},");
+                Log("{" + $"\t\"scene\": \"{data.Item1}\",\"type\": \"{data.Item2}\",\"name\": \"{data.Item3}\",\"x\":{data.Item4},\"y\": {data.Item5},\"requiresInfection\": false" + "},");
             }
+            Log("hi");
             foreach(var data in infectedBgObjInformation) {
                 if(!backgroundObjectInformation.Contains(data)) {
                     Log("{" + $"\t\"scene\": \"{data.Item1}\",\"type\": \"{data.Item2}\",\"name\": \"{data.Item3}\",\"x\":{data.Item4},\"y\": {data.Item5},\"requiresInfection\": true" + "},");
@@ -64,28 +65,7 @@ namespace NotBackgroundObjectRando {
             ("Mines_16", "Breakable", "brk_Crystal1", 49.43232f, -12.88081f),
             ("Crossroads_16", "PlayMakerFSM", "Breakable Pole", 31.86311f, 3.178232f),
             ("Crossroads_16", "PlayMakerFSM", "Breakable Pole 1", 36.25311f, 3.088232f),
-            ("Crossroads_16", "PlayMakerFSM", "Breakable Pole 2", 38.1431f, 3.268232f),
-            //Abyss_18 windy set inconsistency
-            /*("Abyss_18", "GrassSpriteBehaviour", "black_grass4 (2)", 11.38f, 17.14f),
-            ("Abyss_18", "GrassSpriteBehaviour", "black_grass4 (1)", 2.12f, 16.96f),
-            ("Abyss_18", "GrassSpriteBehaviour", "black_grass3 (4)", 4.9867f, 17.34f),
-            //Abyss_18 non windy set inconsistency
-            ("Abyss_18", "GrassSpriteBehaviour", "black_grass3", 4.9867f, 17.34f),
-            ("Abyss_18", "GrassSpriteBehaviour", "black_grass4", 2.12f, 16.96f),
-            //missable aspid queen infected barrier
-            ("Crossroads_22", "InfectedBurstLarge", "infected_large_blob_020000 (2)", 83.54f, 20.2f),
-            ("Crossroads_22", "InfectedBurstLarge", "infected_large_blob_020000 (3)", 83.5794f, 22.6633f),
-            ("Crossroads_22", "InfectedBurstLarge", "infected_large_blob_030000 (1)", 83.7894f, 21.2133f),
-            ("Crossroads_22", "InfectedBurstLarge", "infected_large_blob_030000 (2)", 83.5394f, 22.5233f),
-            ("Crossroads_22", "InfectedBurstLarge", "infected_large_blob_030000 (5)", 84.72f, 20.41f),
-            ("Crossroads_22", "InfectedBurstLarge", "infected_large_blob_030000 (6)", 84.7794f, 21.7833f),
-            ("Crossroads_22", "InfectedBurstLarge", "infected_large_blob_030000 (7)", 84.7994f, 23.4433f),
-            ("Crossroads_22", "InfectedBurstLarge", "infected_large_blob_030000 (8)", 84.1694f, 24.2733f),
-            ("Crossroads_22", "InfectedBurstLarge", "infected_large_blob_030000 (17)", 83.0394f, 24.2133f),
-            ("Crossroads_22", "InfectedBurstLarge", "infected_large_blob_030000 (9)", 83.32f, 25.28f),
-            ("Crossroads_22", "BreakableInfectedVine", "infected_vine_04", 83.65f, 22.42f),
-            ("Crossroads_22", "BreakableInfectedVine", "infected_vine_04 (1)", 83.61f, 27.42f)*/
-
+            ("Crossroads_16", "PlayMakerFSM", "Breakable Pole 2", 38.1431f, 3.268232f)
         ];
         private void PerSceneTask1() => PerSceneTask(false);
         private void PerSceneTask(bool isManual) {
@@ -122,7 +102,13 @@ namespace NotBackgroundObjectRando {
                         continue;
                     if(c.gameObject.scene.name == "Abyss_18" && c.transform.parent != null && c.transform.parent.name.Contains("Windy_Set"))
                         continue;
-                    if(c.gameObject.scene.name == "Abyss_19" && c.transform.parent != null && c.transform.parent.name == "Pre_Double_Jump")
+                    if(c.gameObject.scene.name == "Abyss_19" && c.transform.parent != null) {
+                        if(c.transform.parent.name == "Pre_Double_Jump")
+                            continue;
+                        if(c.transform.parent.parent != null && c.transform.parent.parent.name == "infected_door")
+                            continue;
+                    }
+                    if(c.gameObject.scene.name == "Abyss_20" && c.transform.parent != null && c.transform.parent.name == "vines static")
                         continue;
                     if(c.gameObject.scene.name == "Crossroads_22" && c.transform.parent != null && c.transform.parent.parent != null) {
                         if(c.transform.parent.parent.name == "infected_door")
@@ -135,7 +121,14 @@ namespace NotBackgroundObjectRando {
                     if(oobLocations.Any(tup => tup.Item1 == data.Item1 && tup.Item2 == data.Item2 && tup.Item3 == data.Item3 && Mathf.Abs(tup.Item4 - data.Item4) < 0.01f && Mathf.Abs(tup.Item5 - data.Item5) < 0.01f))
                         continue;
                     if(isManual) {
-                        Log($"Found {data.Item2}:{data.Item3} in {data.Item1} at {data.Item4}/{data.Item5}");
+                        //Log($"Found {data.Item2}:{data.Item3} in {data.Item1} at {data.Item4}/{data.Item5}");
+                        Log($"\t{data.Item2}\t{recursiveParent(data.Item3, c.gameObject)}\t{data.Item1}\t{data.Item4}\t{data.Item5}\t{PlayerData.instance.hasDoubleJump}");
+                        string recursiveParent(string name, GameObject gameObject) {
+                            if(gameObject.transform.parent == null)
+                                return name;
+                            return recursiveParent($"{gameObject.transform.parent.name}/{name}", gameObject.transform.parent.gameObject);
+                        }
+                        //testing
                     }
                     else {
                         if(PlayerData.instance.crossroadsInfected) {
@@ -153,17 +146,8 @@ namespace NotBackgroundObjectRando {
     }
 }
 
-//no softlock prevention for reentering dreams
-
-//new manual? checks
+//technically breakable objects that don't fit into a convenient formula
 //fsm("Crossroads Sign Control") in c01
 //Crossroads_27/Direction Pole Tram/"FSM"
 // --- checked king's pass, crossroads, greenpath, canyon+archive, fungal,
 //      deepnest but only from mlords to super secret
-
-//earlySceneChange fix that one bubble
-//disable background pogos
-//add location type statistics
-//maybe add a place for manual logic
-//maybe examine windy/still grass for matching locations
-//check grassrando compatibility (/ consider interop)

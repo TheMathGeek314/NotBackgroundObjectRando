@@ -53,10 +53,12 @@
   </Target>
   <ItemGroup>
     <None Remove="Resources\BackgroundData.json" />
+    <None Remove="Resources\ManualLogic.json" />
     <None Remove="Resources\pin_barrel.png" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\BackgroundData.json" />
+    <EmbeddedResource Include="Resources\ManualLogic.json" />
     <EmbeddedResource Include="Resources\pin_barrel.png" />
   </ItemGroup>
   <ItemGroup>

@@ -68,7 +68,7 @@ namespace NotBackgroundObjectRando {
             group ??= rb.MainItemStage.AddItemGroup(label);
             rb.OnGetGroupFor.Subscribe(0.01f, ResolveBgObjGroup);
             bool ResolveBgObjGroup(RequestBuilder rb, string item, RequestBuilder.ElementType type, out GroupBuilder gb) {
-                gb = default;
+                gb = group;
                 return false;
             }
         }
