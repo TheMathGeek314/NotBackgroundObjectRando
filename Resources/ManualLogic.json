@@ -2,5 +2,55 @@
   {
     "location": "BgObj-Fungus3_24_fung_vine_cut_[6]_54.94_6.4",
     "logic": "(Fungus3_24[right1] | Fungus3_24[top1] | Fungus3_24[left1]) + (ACID | RIGHTCLAW + LEFTSUPERDASH + ACIDSKIPS | LEFTCLAW + RIGHTSUPERDASH + ACIDSKIPS | LEFTDASHSLASH | LEFTDASH + GREATSLASH | PRECISEMOVEMENT + (LEFTDASH + (LEFTSLASH | CYCLONE) | RIGHTDASHSLASH | RIGHTDASH + WINGS + (RIGHTSLASH | CYCLONE | GREATSLASH)))"
+  },
+  // city bridge 
+  {
+    "location": "BgObj-Ruins1_18_ruind_dressing_light_02_24,72_24,42",
+    "logic": "City_Bridge_Above_Fountain_Right_Side"
+  },
+  {
+    "location": "BgObj-Ruins1_18_ruin_pole_knob_33,73_21,11906",
+    "logic": "City_Bridge_Above_Fountain_Right_Side"
+  },
+  {
+    "location": "BgObj-Ruins1_18_ruind_dressing_light_02_[1]_37,63_24,42",
+    "logic": "City_Bridge_Above_Fountain_Right_Side"
+  },
+  {
+    "location": "BgObj-Ruins1_18_ruin_pole_knob_[1]_41,33_21,11906",
+    "logic": "City_Bridge_Above_Fountain_Right_Side"
+  },
+  {
+    "location": "BgObj-Ruins1_18_ruind_dressing_light_02_[2]_51,19_24,42",
+    "logic": "City_Bridge_Above_Fountain_Right_Side"
+  },
+  {
+    "location": "BgObj-Ruins1_18_ruin_pole_knob_[2]_58,97_21,11906",
+    "logic": "City_Bridge_Above_Fountain_Right_Side"
+  },
+  {
+    "location": "BgObj-Ruins1_18_ruind_dressing_light_02_[3]_64,32_24,42",
+    "logic": "City_Bridge_Above_Fountain_Right_Side"
+  },
+  {
+    "location": "BgObj-Ruins1_18_ruin_pole_knob_[3]_69,32_21,11906",
+    "logic": "City_Bridge_Above_Fountain_Right_Side"
+  },
+  {
+    "location": "BgObj-Ruins1_18_ruind_dressing_light_02_[4]_77,49_24,42",
+    "logic": "City_Bridge_Above_Fountain_Right_Side"
+  },
+  {
+    "location": "BgObj-Ruins1_18_break_rag_86,16_14,63",
+    "logic": "City_Bridge_Above_Fountain_Bottom"
+  },
+  {
+    "location": "BgObj-Ruins1_18_ruins_trophy_medium_85,65_9,73",
+    "logic": "City_Bridge_Above_Fountain_Bottom"
+  },
+  {
+    "location": "BgObj-Ruins1_18_ruind_dressing_light_02_[5]_11,29_24,26",
+    "logic": "(Ruins1_18[left1] | (Ruins1_18[right1] + Lever-City_Bridge_Above_Fountain))"
   }
+  //end of
 ]
