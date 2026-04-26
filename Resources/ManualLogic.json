@@ -24,7 +24,7 @@
   //If you did not go through the whole room,but added some improvements,you can note this way:
   // //city brige/city bridge,stage 1
   // stage 2:
-//{
+  //{
     //"location": "BgObj-Ruins1_18_ruin_pole_knob_33,73_21,11906",
     //"logic": "City_Bridge_Above_Fountain_Right_Side"
   //}
