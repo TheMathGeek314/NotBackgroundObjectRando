@@ -18,7 +18,8 @@ However, there is a json available for manually implemented clauses. Pull reques
 ## Warnings
 - If you enable the setting to lock locations behind items, at least one other location must exist from base rando or another connection.
 - Softlock prevention has not been implemented. If you will not be able to return to a room, do your best to clear it out completely.
-- Some other mods may remove objects to make space for new content (for example, new benches or stags). No compatibility checks have been implemented.
+- Some other mods may remove objects to make space for new content (for example, new benches or stags). No compatibility checks have been implemented.Includes:BgObj-Fungus1_36_green_grass_1[1]_22,14_2,85 with "stone sactuarry" bench. something and a zote bench in city bridge,left of storerooms. quirrel peak bench/stag.
+(i didnt come up with any better place for this yes)
 - Yes, on some devices you may experience lag when you start the rando, sit at a bench, break items, etc. This is normal.
 
 ## GrassRandomizer

@@ -25,6 +25,11 @@ namespace NotBackgroundObjectRando {
             foreach(ManualLogicJson manlog in new ParseJson(stream).parseFile<ManualLogicJson>()) {
                 manlog.store();
             }
+            JsonLogicFormat fmt = new();
+            using Stream wp = assembly.GetManifestResourceStream(
+                assembly.GetManifestResourceNames().Single(str => str.EndsWith("waypoints.json"))
+            );
+            lmb.DeserializeFile(LogicFileType.Waypoints, fmt, wp);
             foreach(BackgroundObjectJson bgObj in BackgroundObjectJson.allObjects) {
                 string icName = RandoInterop.GetPlacementName(bgObj);
                 Term term = lmb.GetOrAddTerm(icName, TermType.Int);
