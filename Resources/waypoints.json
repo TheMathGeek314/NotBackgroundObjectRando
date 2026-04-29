@@ -14,6 +14,7 @@
   "logic": "((Fungus1_35[left1] | Fungus1_35[right1]) + (DARKROOMS | LANTERN))"
   },
 //love tower
+  {
   "name": "Below_Love_Tower",
   "logic": "((Ruins2_07[left1] | Stag-Flooded_Station + Can_Stag) + (SWIM | RIGHTSKIPACID | (COMPLEXSKIPS + ACIDSKIPS + RIGHTDASH + WINGS + (SPELLAIRSTALL + $CASTSPELL | RIGHTSHARPSHADOW))) | Ruins2_07[top1] | Ruins2_07[right1]+(LEFTCLAW|WINGS|LEFTDASH))"
   }
