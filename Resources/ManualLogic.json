@@ -3,646 +3,618 @@
     "location": "BgObj-Fungus3_24_fung_vine_cut_[6]_54.94_6.4",
     "logic": "(Fungus3_24[right1] | Fungus3_24[top1] | Fungus3_24[left1]) + (ACID | RIGHTCLAW + LEFTSUPERDASH + ACIDSKIPS | LEFTCLAW + RIGHTSUPERDASH + ACIDSKIPS | LEFTDASHSLASH | LEFTDASH + GREATSLASH | PRECISEMOVEMENT + (LEFTDASH + (LEFTSLASH | CYCLONE) | RIGHTDASHSLASH | RIGHTDASH + WINGS + (RIGHTSLASH | CYCLONE | GREATSLASH)))"
   },
-  //only basic logic.even shade soul has not yet been touched
-  //hopefully don't forget to remove this comment when more complex logic happens
-  //also ignores breakeble wall rando for now.nail directions are ignored as well.
-
-  //Overall progress:stage 1
-  //(Possible future) stages
-  //Stage 1. Remove blatantly unreacheble. Example:Crystal on top right of dirtmouth,([All transitions])->([Right1])
-  //Stage 2. Improvements. Any improvements. Example:Crystal on top right of dirtmotuh,([Right1]->[Right1] + Lever-Dirtmouth-Elevator?TRUE|LEFTCLAW|WINGS)
-  //[right1] was actually not accurate,scinse you cant(with lever rando) get into the elevator
-  //Stage 3.Advanced.Example:Crystal on top right of dirtmotuh,(([Right1] + Lever-Dirtmouth-Elevator?TRUE|LEFTCLAW|WINGS)->(Lever-Dirtmouth-Elevator?FALSE|LEFTCLAW+RIGHTCDASH|SHRIEKPOGO|WINGS+ELEGY)
-  //the crystal is actually below the elevator,so you should be able get it with only leftclaw and right cdash.the logic in this example is not real,i haven't gotten there yet lol.It's just an example for "specialized,correct logic"
-  //Stage 4.Final(complete).Anything extra.shade skips,enemy pogos + elegy and other nosnesne.
-  //You can obviously still contribute even if the stage says "complete"
-  //Breakeble wall rando support should be added in stage 2 or 3.In the same way,cannot be marked as "complete",until confirmed you can get the item with only downslash(or the required slash direction is added in logic).
-
-  //How to contribue:
-  //You can append onto a comment if you've confirmed the logic you added is correct.Example:"//city brige->//city bridge,stage 2  or ->//city bridge(complete),stage 4"
-  //scinse there can't be skips in that room,you just have to confirm your "Right/Left1 + FIREBALL>2" is written correctly and you can in fact do that in the game.If you've also tested elegy,dashlsash and whatnot and you believe you've added all the ways to reach the item,you can mark it as (complete).
-  //If you did not go through the whole room,but added some improvements,you can note this way:
-  // //city brige/city bridge,stage 1
-  // stage 2:
-  //{
-    //"location": "BgObj-Ruins1_18_ruin_pole_knob_33,73_21,11906",
-    //"logic": "City_Bridge_Above_Fountain_Right_Side"
-  //}
-  // ... (stage 1,unnoted(implied stage 1)) entries
-  //again,the above is just an example.city bridge right side is not yet confirmed as anything beyond stage 1.
-
-
+  
   // city bridge 
   {
-    "location": "BgObj-Ruins1_18_ruind_dressing_light_02_24,72_24,42",
+    "location": "BgObj-Ruins1_18_ruind_dressing_light_02_24.72_24.42",
     "logic": "City_Bridge_Above_Fountain_Right_Side"
   },
   {
-    "location": "BgObj-Ruins1_18_ruin_pole_knob_33,73_21,11906",
+    "location": "BgObj-Ruins1_18_ruin_pole_knob_33.73_21.11906",
     "logic": "City_Bridge_Above_Fountain_Right_Side"
   },
   {
-    "location": "BgObj-Ruins1_18_ruind_dressing_light_02_[1]_37,63_24,42",
+    "location": "BgObj-Ruins1_18_ruind_dressing_light_02_[1]_37.63_24.42",
     "logic": "City_Bridge_Above_Fountain_Right_Side"
   },
   {
-    "location": "BgObj-Ruins1_18_ruin_pole_knob_[1]_41,33_21,11906",
+    "location": "BgObj-Ruins1_18_ruin_pole_knob_[1]_41.33_21.11906",
     "logic": "City_Bridge_Above_Fountain_Right_Side"
   },
   {
-    "location": "BgObj-Ruins1_18_ruind_dressing_light_02_[2]_51,19_24,42",
+    "location": "BgObj-Ruins1_18_ruind_dressing_light_02_[2]_51.19_24.42",
     "logic": "City_Bridge_Above_Fountain_Right_Side"
   },
   {
-    "location": "BgObj-Ruins1_18_ruin_pole_knob_[2]_58,97_21,11906",
+    "location": "BgObj-Ruins1_18_ruin_pole_knob_[2]_58.97_21.11906",
     "logic": "City_Bridge_Above_Fountain_Right_Side"
   },
   {
-    "location": "BgObj-Ruins1_18_ruind_dressing_light_02_[3]_64,32_24,42",
+    "location": "BgObj-Ruins1_18_ruind_dressing_light_02_[3]_64.32_24.42",
     "logic": "City_Bridge_Above_Fountain_Right_Side"
   },
   {
-    "location": "BgObj-Ruins1_18_ruin_pole_knob_[3]_69,32_21,11906",
+    "location": "BgObj-Ruins1_18_ruin_pole_knob_[3]_69.32_21.11906",
     "logic": "City_Bridge_Above_Fountain_Right_Side"
   },
   {
-    "location": "BgObj-Ruins1_18_ruind_dressing_light_02_[4]_77,49_24,42",
+    "location": "BgObj-Ruins1_18_ruind_dressing_light_02_[4]_77.49_24.42",
     "logic": "City_Bridge_Above_Fountain_Right_Side"
   },
   {
-    "location": "BgObj-Ruins1_18_break_rag_86,16_14,63",
+    "location": "BgObj-Ruins1_18_break_rag_86.16_14.63",
     "logic": "City_Bridge_Above_Fountain_Bottom"
   },
   {
-    "location": "BgObj-Ruins1_18_ruins_trophy_medium_85,65_9,73",
+    "location": "BgObj-Ruins1_18_ruins_trophy_medium_85.65_9.73",
     "logic": "City_Bridge_Above_Fountain_Bottom"
   },
   {
-    "location": "BgObj-Ruins1_18_ruind_dressing_light_02_[5]_11,29_24,26",
+    "location": "BgObj-Ruins1_18_ruind_dressing_light_02_[5]_11.29_24.26",
     "logic": "(Ruins1_18[left1] | (Ruins1_18[right1] + Lever-City_Bridge_Above_Fountain?TRUE))"
   },
   //outside shade soul
  {
-    "name": "BgObj-Ruins1_31_break_rag_54,57378_59,44",
+    "name": "BgObj-Ruins1_31_break_rag_54.57378_59.44",
     "logic": "Ruins1_31[left2] | Ruins1_31 + (ANYCLAW + WINGS + (RIGHTCLAW | RIGHTDASH | RIGHTSUPERDASH) | LEFTCLAW + $SHRIEKPOGO[before:AREASOUL] | $SHRIEKPOGO[3,before:AREASOUL])"
  },
   //city storerooms bottom
         {
-        "name": "BgObj-Ruins1_17_brk_barrel_03_[1]_39,91_26,93",
+        "name": "BgObj-Ruins1_17_brk_barrel_03_[1]_39.91_26.93",
         "logic": "Ruins1_17[top1]"
       },
       {
-        "name": "BgObj-Ruins1_17_brk_barrel_03_[10]_81,75_49,93",
+        "name": "BgObj-Ruins1_17_brk_barrel_03_[10]_81.75_49.93",
         "logic": "Ruins1_17[top1]"
       },
       {
-        "name": "BgObj-Ruins1_17_brk_barrel_03_[2]_29,77_54,1",
+        "name": "BgObj-Ruins1_17_brk_barrel_03_[2]_29.77_54.1",
         "logic": "Ruins1_17[top1]"
       },
       {
-        "name": "BgObj-Ruins1_17_brk_barrel_03_[5]_71,18_25,72",
+        "name": "BgObj-Ruins1_17_brk_barrel_03_[5]_71.18_25.72",
         "logic": "Ruins1_17[top1]"
       },
       {
-        "name": "BgObj-Ruins1_17_brk_barrel_03_[6]_51,84_2,76",
+        "name": "BgObj-Ruins1_17_brk_barrel_03_[6]_51.84_2.76",
         "logic": "Ruins1_17[top1]"
       },
       {
-        "name": "BgObj-Ruins1_17_brk_barrel_03_20,36_41,21",
+        "name": "BgObj-Ruins1_17_brk_barrel_03_20.36_41.21",
         "logic": "Ruins1_17[top1]"
       },
       {
-        "name": "BgObj-Ruins1_17_brk_barrel_04_[10]_70,81_50,1",
+        "name": "BgObj-Ruins1_17_brk_barrel_04_[10]_70.81_50.1",
         "logic": "Ruins1_17[top1]"
       },
       {
-        "name": "BgObj-Ruins1_17_brk_barrel_04_[11]_69,44_49,94",
+        "name": "BgObj-Ruins1_17_brk_barrel_04_[11]_69.44_49.94",
         "logic": "Ruins1_17[top1]"
       },
       {
-        "name": "BgObj-Ruins1_17_brk_barrel_04_[14]_80,62_49,94",
+        "name": "BgObj-Ruins1_17_brk_barrel_04_[14]_80.62_49.94",
         "logic": "Ruins1_17[top1]"
       },
       {
-        "name": "BgObj-Ruins1_17_brk_barrel_04_[2]_31,57_2,86",
+        "name": "BgObj-Ruins1_17_brk_barrel_04_[2]_31.57_2.86",
         "logic": "Ruins1_17[top1]"
       },
       {
-        "name": "BgObj-Ruins1_17_brk_barrel_04_[3]_57,77_2,86",
+        "name": "BgObj-Ruins1_17_brk_barrel_04_[3]_57.77_2.86",
         "logic": "Ruins1_17[top1]"
       },
       {
-        "name": "BgObj-Ruins1_17_brk_barrel_04_[5]_48,84_30,91",
+        "name": "BgObj-Ruins1_17_brk_barrel_04_[5]_48.84_30.91",
         "logic": "Ruins1_17[top1]"
       },
       {
-        "name": "BgObj-Ruins1_17_brk_barrel_04_[7]_69,92_25,97",
+        "name": "BgObj-Ruins1_17_brk_barrel_04_[7]_69.92_25.97",
         "logic": "Ruins1_17[top1]"
       },
       {
-        "name": "BgObj-Ruins1_17_brk_barrel_04_[8]_71,2_38,02",
+        "name": "BgObj-Ruins1_17_brk_barrel_04_[8]_71.2_38.02",
         "logic": "Ruins1_17[top1]"
       },
       {
-        "name": "BgObj-Ruins1_17_brk_barrel_04_[9]_75,56_50,1",
+        "name": "BgObj-Ruins1_17_brk_barrel_04_[9]_75.56_50.1",
         "logic": "Ruins1_17[top1]"
       },
       {
-        "name": "BgObj-Ruins1_17_brk_barrel_04_43,06_8,1",
+        "name": "BgObj-Ruins1_17_brk_barrel_04_43.06_8.1",
         "logic": "Ruins1_17[top1]"
       },
       {
-        "name": "BgObj-Ruins1_17_brk_cart_01_[1]_42,21_28,19",
+        "name": "BgObj-Ruins1_17_brk_cart_01_[1]_42.21_28.19",
         "logic": "Ruins1_17[top1]"
       },
       {
-        "name": "BgObj-Ruins1_17_brk_cart_02_49,49393_4,14658",
+        "name": "BgObj-Ruins1_17_brk_cart_02_49.49393_4.14658",
         "logic": "Ruins1_17[top1]"
       },
       {
-        "name": "BgObj-Ruins1_17_brk_cart_03_34,65653_4,104429",
+        "name": "BgObj-Ruins1_17_brk_cart_03_34.65653_4.104429",
         "logic": "Ruins1_17[top1]"
       },
       {
-        "name": "BgObj-Ruins1_17_ruin_pole_knob_[1]_31,43_4,12",
+        "name": "BgObj-Ruins1_17_ruin_pole_knob_[1]_31.43_4.12",
         "logic": "Ruins1_17[top1]"
       },
       {
-        "name": "BgObj-Ruins1_17_ruin_pole_knob_53,63_4,12",
+        "name": "BgObj-Ruins1_17_ruin_pole_knob_53.63_4.12",
         "logic": "Ruins1_17[top1]"
       },
       {
-        "name": "BgObj-Ruins1_17_ruind_dressing_light_03_[1]_67,49_6,9",
+        "name": "BgObj-Ruins1_17_ruind_dressing_light_03_[1]_67.49_6.9",
         "logic": "Ruins1_17[top1]"
       },
       {
-        "name": "BgObj-Ruins1_17_ruind_dressing_light_03_[10]_68,77_54,98",
+        "name": "BgObj-Ruins1_17_ruind_dressing_light_03_[10]_68.77_54.98",
         "logic": "Ruins1_17[top1]"
       },
       {
-        "name": "BgObj-Ruins1_17_ruind_dressing_light_03_[11]_72,4_53,93",
+        "name": "BgObj-Ruins1_17_ruind_dressing_light_03_[11]_72.4_53.93",
         "logic": "Ruins1_17[top1]"
       },
       {
-        "name": "BgObj-Ruins1_17_ruind_dressing_light_03_[12]_78,51_54,77",
+        "name": "BgObj-Ruins1_17_ruind_dressing_light_03_[12]_78.51_54.77",
         "logic": "Ruins1_17[top1]"
       },
       {
-        "name": "BgObj-Ruins1_17_ruind_dressing_light_03_[2]_72,94_8,06",
+        "name": "BgObj-Ruins1_17_ruind_dressing_light_03_[2]_72.94_8.06",
         "logic": "Ruins1_17[top1]"
       },
       {
-        "name": "BgObj-Ruins1_17_ruind_dressing_light_03_[4]_76,81_6,35",
+        "name": "BgObj-Ruins1_17_ruind_dressing_light_03_[4]_76.81_6.35",
         "logic": "Ruins1_17[top1]"
       },
       {
-        "name": "BgObj-Ruins1_17_ruind_dressing_light_03_[5]_15,5_6,32",
+        "name": "BgObj-Ruins1_17_ruind_dressing_light_03_[5]_15.5_6.32",
         "logic": "Ruins1_17[bot1] | ((Ruins1_17[top1]|Ruins1_17[right1])+Lever-City_storerooms?TRUE)"
       },
       {
-        "name": "BgObj-Ruins1_17_ruind_dressing_light_03_[6]_8,21_7,23",
+        "name": "BgObj-Ruins1_17_ruind_dressing_light_03_[6]_8.21_7.23",
         "logic": "Ruins1_17[bot1] | ((Ruins1_17[top1]|Ruins1_17[right1])+Lever-City_storerooms?TRUE)"
       },
       {
-        "name": "BgObj-Ruins1_17_ruind_dressing_light_03_[7]_75,69_30,38",
+        "name": "BgObj-Ruins1_17_ruind_dressing_light_03_[7]_75.69_30.38",
         "logic": "Ruins1_17[top1]"
       },
       {
-        "name": "BgObj-Ruins1_17_ruind_dressing_light_03_[8]_70,86_43",
+        "name": "BgObj-Ruins1_17_ruind_dressing_light_03_[8]_70.86_43",
         "logic": "Ruins1_17[top1]"
       },
       {
-        "name": "BgObj-Ruins1_17_ruind_dressing_light_03_[9]_78,55_42,51",
+        "name": "BgObj-Ruins1_17_ruind_dressing_light_03_[9]_78.55_42.51",
         "logic": "Ruins1_17[top1]"
       },
       {
-        "name": "BgObj-Ruins1_17_break_rag_[1]_76,24_53,46",
+        "name": "BgObj-Ruins1_17_break_rag_[1]_76.24_53.46",
         "logic": "Ruins1_17[top1]"
       },
       {
-        "name": "BgObj-Ruins1_17_break_rag_[2]_76,79_41,87",
+        "name": "BgObj-Ruins1_17_break_rag_[2]_76.79_41.87",
         "logic": "Ruins1_17[top1]"
       },
       {
-        "name": "BgObj-Ruins1_17_break_rag_[3]_78,78_29,76",
+        "name": "BgObj-Ruins1_17_break_rag_[3]_78.78_29.76",
         "logic": "Ruins1_17[top1]"
       },
       {
-        "name": "BgObj-Ruins1_17_break_rag_68,26_53,88",
+        "name": "BgObj-Ruins1_17_break_rag_68.26_53.88",
         "logic": "Ruins1_17[top1]"
       },
   //top right dirtmouth
    {
-        "name": "BgObj-Town_brk_Crystal3_248_41,67",
+        "name": "BgObj-Town_brk_Crystal3_248_41.67",
         "logic": "Town[right1]+(Lever-Dirtmouth_Elevator?TRUE|LEFTCLAW|WINGS)"
    },
   //stone sanctuary,mask shard
     {
-        "name": "BgObj-Fungus1_36_vine_cut_[3]_20,72_17,49",
+        "name": "BgObj-Fungus1_36_vine_cut_[3]_20.72_17.49",
         "logic": "Fungus1_36[left1]+(LEFTCLAW|WINGS)"
    },
     {
-        "name": "BgObj-Fungus1_36_vine_cut_[2]_19,21_19,4",
+        "name": "BgObj-Fungus1_36_vine_cut_[2]_19.21_19.4",
         "logic": "Fungus1_36[left1]+(LEFTCLAW|WINGS)"
    },
   //stone sanctuary,internal
         {
-        "name": "BgObj-Fungus1_35_No_eyes_statue1_9,52_4,23",
+        "name": "BgObj-Fungus1_35_No_eyes_statue1_9.52_4.23",
         "logic": "Stone_Sanctuary_Internal"
       },
       {
-        "name": "BgObj-Fungus1_35_fung_vine_cut_[1]_9,72_7,77",
+        "name": "BgObj-Fungus1_35_fung_vine_cut_[1]_9.72_7.77",
         "logic": "Stone_Sanctuary_Internal"
       },
       {
-        "name": "BgObj-Fungus1_35_fung_vine_cut_[10]_81,68_5,06",
+        "name": "BgObj-Fungus1_35_fung_vine_cut_[10]_81.68_5.06",
         "logic": "Stone_Sanctuary_Internal"
       },
       {
-        "name": "BgObj-Fungus1_35_fung_vine_cut_[11]_87,36_5,45",
+        "name": "BgObj-Fungus1_35_fung_vine_cut_[11]_87.36_5.45",
         "logic": "Stone_Sanctuary_Internal"
       },
       {
-        "name": "BgObj-Fungus1_35_fung_vine_cut_[12]_82,33_16,02",
+        "name": "BgObj-Fungus1_35_fung_vine_cut_[12]_82.33_16.02",
         "logic": "Stone_Sanctuary_Internal"
       },
       {
-        "name": "BgObj-Fungus1_35_fung_vine_cut_[13]_94,94_17,85",
+        "name": "BgObj-Fungus1_35_fung_vine_cut_[13]_94.94_17.85",
         "logic": "Stone_Sanctuary_Internal"
       },
       {
-        "name": "BgObj-Fungus1_35_fung_vine_cut_[14]_96,95_17,37",
+        "name": "BgObj-Fungus1_35_fung_vine_cut_[14]_96.95_17.37",
         "logic": "Stone_Sanctuary_Internal"
       },
       {
-        "name": "BgObj-Fungus1_35_fung_vine_cut_[15]_88,36_23,37",
+        "name": "BgObj-Fungus1_35_fung_vine_cut_[15]_88.36_23.37",
         "logic": "Stone_Sanctuary_Internal"
       },
       {
-        "name": "BgObj-Fungus1_35_fung_vine_cut_[16]_95,58_31,14",
+        "name": "BgObj-Fungus1_35_fung_vine_cut_[16]_95.58_31.14",
         "logic": "Stone_Sanctuary_Internal"
       },
       {
-        "name": "BgObj-Fungus1_35_fung_vine_cut_[17]_71,77_26,72",
+        "name": "BgObj-Fungus1_35_fung_vine_cut_[17]_71.77_26.72",
         "logic": "Stone_Sanctuary_Internal"
       },
       {
-        "name": "BgObj-Fungus1_35_fung_vine_cut_[18]_106,4_22,46",
+        "name": "BgObj-Fungus1_35_fung_vine_cut_[18]_106.4_22.46",
         "logic": "Stone_Sanctuary_Internal"
       },
       {
-        "name": "BgObj-Fungus1_35_fung_vine_cut_[19]_94,09_10,93",
+        "name": "BgObj-Fungus1_35_fung_vine_cut_[19]_94.09_10.93",
         "logic": "Stone_Sanctuary_Internal"
       },
       {
-        "name": "BgObj-Fungus1_35_fung_vine_cut_[2]_13,62_15,5",
+        "name": "BgObj-Fungus1_35_fung_vine_cut_[2]_13.62_15.5",
         "logic": "Stone_Sanctuary_Internal"
       },
       {
-        "name": "BgObj-Fungus1_35_fung_vine_cut_[20]_117,71_17,59",
+        "name": "BgObj-Fungus1_35_fung_vine_cut_[20]_117.71_17.59",
         "logic": "Stone_Sanctuary_Internal"
       },
       {
-        "name": "BgObj-Fungus1_35_fung_vine_cut_[3]_21,45_19,24",
+        "name": "BgObj-Fungus1_35_fung_vine_cut_[3]_21.45_19.24",
         "logic": "Stone_Sanctuary_Internal"
       },
       {
-        "name": "BgObj-Fungus1_35_fung_vine_cut_[4]_28,09_18,87",
+        "name": "BgObj-Fungus1_35_fung_vine_cut_[4]_28.09_18.87",
         "logic": "Stone_Sanctuary_Internal"
       },
       {
-        "name": "BgObj-Fungus1_35_fung_vine_cut_[5]_37,27_25,06",
+        "name": "BgObj-Fungus1_35_fung_vine_cut_[5]_37.27_25.06",
         "logic": "Stone_Sanctuary_Internal"
       },
       {
-        "name": "BgObj-Fungus1_35_fung_vine_cut_[6]_48,39_24,8",
+        "name": "BgObj-Fungus1_35_fung_vine_cut_[6]_48.39_24.8",
         "logic": "Stone_Sanctuary_Internal"
       },
       {
-        "name": "BgObj-Fungus1_35_fung_vine_cut_[7]_55,93_25,92",
+        "name": "BgObj-Fungus1_35_fung_vine_cut_[7]_55.93_25.92",
         "logic": "Stone_Sanctuary_Internal"
       },
       {
-        "name": "BgObj-Fungus1_35_fung_vine_cut_[8]_78,59_4,34",
+        "name": "BgObj-Fungus1_35_fung_vine_cut_[8]_78.59_4.34",
         "logic": "Stone_Sanctuary_Internal"
       },
       {
-        "name": "BgObj-Fungus1_35_fung_vine_cut_[9]_75,28_4,67",
+        "name": "BgObj-Fungus1_35_fung_vine_cut_[9]_75.28_4.67",
         "logic": "Stone_Sanctuary_Internal"
       },
       {
-        "name": "BgObj-Fungus1_35_fung_vine_cut_7,42_6,31",
+        "name": "BgObj-Fungus1_35_fung_vine_cut_7.42_6.31",
         "logic": "Stone_Sanctuary_Internal"
       },
   //crossroads to fungal
   {
-    "name": "BgObj-Crossroads_18_Crossroads_Statue_Horned_1_11,31_6,22",
+    "name": "BgObj-Crossroads_18_Crossroads_Statue_Horned_1_11.31_6.22",
     "logic": "Crossroads_18"
   },
   {
-    "name": "BgObj-Crossroads_18_Crossroads_Statue_Horned_27,14_3,24",
+    "name": "BgObj-Crossroads_18_Crossroads_Statue_Horned_27.14_3.24",
     "logic": "Crossroads_18"
   },
   {
-    "name": "BgObj-Crossroads_18_Crossroads_Statue_Shell_8,22_32,16",
+    "name": "BgObj-Crossroads_18_Crossroads_Statue_Shell_8.22_32.16",
     "logic": "Crossroads_18"
   },
   {
-    "name": "BgObj-Crossroads_18_Direction_Pole_City_14,07659_42,38",
+    "name": "BgObj-Crossroads_18_Direction_Pole_City_14.07659_42.38",
     "logic": "Crossroads_18"
   },
   {
-    "name": "BgObj-Crossroads_18_Fungus_Mushroom_01_[1]_9,34_5,59",
+    "name": "BgObj-Crossroads_18_Fungus_Mushroom_01_[1]_9.34_5.59",
     "logic": "Crossroads_18"
   },
   {
-    "name": "BgObj-Crossroads_18_Fungus_Mushroom_01_34,23_4,77",
+    "name": "BgObj-Crossroads_18_Fungus_Mushroom_01_34.23_4.77",
     "logic": "Crossroads_18"
   },
   {
-    "name": "BgObj-Crossroads_18_Fungus_Mushroom_02_25,41969_2,526801",
+    "name": "BgObj-Crossroads_18_Fungus_Mushroom_02_25.41969_2.526801",
     "logic": "Crossroads_18"
   },
   {
-    "name": "BgObj-Crossroads_18_Fungus_Mushroom_05_[1]_3,878401_8,325578",
+    "name": "BgObj-Crossroads_18_Fungus_Mushroom_05_[1]_3.878401_8.325578",
     "logic": "Crossroads_18"
   },
   {
-    "name": "BgObj-Crossroads_18_Fungus_Mushroom_05_30,93701_2,364418",
+    "name": "BgObj-Crossroads_18_Fungus_Mushroom_05_30.93701_2.364418",
     "logic": "Crossroads_18"
   },
   {
-    "name": "BgObj-Crossroads_18_Greenpath_Pole_[1]_30,98_3,73",
+    "name": "BgObj-Crossroads_18_Greenpath_Pole_[1]_30.98_3.73",
     "logic": "Crossroads_18"
   },
   {
-    "name": "BgObj-Crossroads_18_Greenpath_Pole_7,16_6,72",
+    "name": "BgObj-Crossroads_18_Greenpath_Pole_7.16_6.72",
     "logic": "Crossroads_18"
   },
   {
-    "name": "BgObj-Crossroads_18_infected_vine_01_[1]_10,35_16,99",
+    "name": "BgObj-Crossroads_18_infected_vine_01_[1]_10.35_16.99",
     "logic": "Crossroads_18 + DREAMER"
   },
   {
-    "name": "BgObj-Crossroads_18_infected_vine_01_18,28_42,6",
+    "name": "BgObj-Crossroads_18_infected_vine_01_18.28_42.6",
     "logic": "Crossroads_18 + DREAMER"
   },
   {
-    "name": "BgObj-Crossroads_18_Breakable_Pole_2_3,55_28,15",
+    "name": "BgObj-Crossroads_18_Breakable_Pole_2_3.55_28.15",
     "logic": "Crossroads_18"
   },
   {
-    "name": "BgObj-Crossroads_18_Breakable_Pole_37,21_36,42",
+    "name": "BgObj-Crossroads_18_Breakable_Pole_37.21_36.42",
     "logic": "Crossroads_18"
   },
   {
-    "name": "BgObj-Crossroads_18_white_grass1_28,312_21,085",
+    "name": "BgObj-Crossroads_18_white_grass1_28.312_21.085",
     "logic": "Crossroads_18"
   },
   {
-    "name": "BgObj-Crossroads_18_white_grass10_14,78884_24,11723",
+    "name": "BgObj-Crossroads_18_white_grass10_14.78884_24.11723",
     "logic": "Crossroads_18"
   },
   {
-    "name": "BgObj-Crossroads_18_white_grass11_9,43_23,01",
+    "name": "BgObj-Crossroads_18_white_grass11_9.43_23.01",
     "logic": "Crossroads_18"
   },
   {
-    "name": "BgObj-Crossroads_18_white_grass12_8,57_32,19",
+    "name": "BgObj-Crossroads_18_white_grass12_8.57_32.19",
     "logic": "Crossroads_18"
   },
   {
-    "name": "BgObj-Crossroads_18_white_grass13_9,7544_31,89323",
+    "name": "BgObj-Crossroads_18_white_grass13_9.7544_31.89323",
     "logic": "Crossroads_18"
   },
   {
-    "name": "BgObj-Crossroads_18_white_grass14_11,65456_39,08134",
+    "name": "BgObj-Crossroads_18_white_grass14_11.65456_39.08134",
     "logic": "Crossroads_18"
   },
   {
-    "name": "BgObj-Crossroads_18_white_grass15_16,76_41,00239",
+    "name": "BgObj-Crossroads_18_white_grass15_16.76_41.00239",
     "logic": "Crossroads_18"
   },
   {
-    "name": "BgObj-Crossroads_18_white_grass16_15,80002_41,22989",
+    "name": "BgObj-Crossroads_18_white_grass16_15.80002_41.22989",
     "logic": "Crossroads_18"
   },
   {
-    "name": "BgObj-Crossroads_18_white_grass18_32,248_32,97",
+    "name": "BgObj-Crossroads_18_white_grass18_32.248_32.97",
     "logic": "Crossroads_18"
   },
   {
-    "name": "BgObj-Crossroads_18_white_grass19_22,54682_20,75992",
+    "name": "BgObj-Crossroads_18_white_grass19_22.54682_20.75992",
     "logic": "Crossroads_18"
   },
   {
-    "name": "BgObj-Crossroads_18_white_grass2_15,04154_23,83912",
+    "name": "BgObj-Crossroads_18_white_grass2_15.04154_23.83912",
     "logic": "Crossroads_18"
   },
   {
-    "name": "BgObj-Crossroads_18_white_grass22_9,05744_13,75229",
+    "name": "BgObj-Crossroads_18_white_grass22_9.05744_13.75229",
     "logic": "Crossroads_18"
   },
   {
-    "name": "BgObj-Crossroads_18_white_grass24_4,093_17,927",
+    "name": "BgObj-Crossroads_18_white_grass24_4.093_17.927",
     "logic": "Crossroads_18"
   },
   {
-    "name": "BgObj-Crossroads_18_white_grass25_29,86_29,94",
+    "name": "BgObj-Crossroads_18_white_grass25_29.86_29.94",
     "logic": "Crossroads_18"
   },
   {
-    "name": "BgObj-Crossroads_18_white_grass28_25,7_21,06",
+    "name": "BgObj-Crossroads_18_white_grass28_25.7_21.06",
     "logic": "Crossroads_18"
   },
   {
-    "name": "BgObj-Crossroads_18_white_grass5_16,17901_23,73801",
+    "name": "BgObj-Crossroads_18_white_grass5_16.17901_23.73801",
     "logic": "Crossroads_18"
   },
   {
-    "name": "BgObj-Crossroads_18_white_grass7_23,13022_27,04931",
+    "name": "BgObj-Crossroads_18_white_grass7_23.13022_27.04931",
     "logic": "Crossroads_18"
   },
   {
-    "name": "BgObj-Crossroads_18_white_grass8_36,37544_35,7952",
+    "name": "BgObj-Crossroads_18_white_grass8_36.37544_35.7952",
     "logic": "Crossroads_18"
   },
 
   {
-    "name": "BgObj-Crossroads_18_infected_large_blob_010000_39,23637_35,29359",
+    "name": "BgObj-Crossroads_18_infected_large_blob_010000_39.23637_35.29359",
     "logic": "Crossroads_18 + DREAMER"
   },
   {
-    "name": "BgObj-Crossroads_18_infected_large_blob_020000_[1]_22,78_40,26",
+    "name": "BgObj-Crossroads_18_infected_large_blob_020000_[1]_22.78_40.26",
     "logic": "Crossroads_18 + DREAMER"
   },
   {
-    "name": "BgObj-Crossroads_18_infected_large_blob_020000_[10]_32,97_14,43",
+    "name": "BgObj-Crossroads_18_infected_large_blob_020000_[10]_32.97_14.43",
     "logic": "Crossroads_18 + DREAMER"
   },
   {
-    "name": "BgObj-Crossroads_18_infected_large_blob_020000_[2]_29,69_29,49",
+    "name": "BgObj-Crossroads_18_infected_large_blob_020000_[2]_29.69_29.49",
     "logic": "Crossroads_18 + DREAMER"
   },
   {
-    "name": "BgObj-Crossroads_18_infected_large_blob_020000_[3]_23,73_38,18",
+    "name": "BgObj-Crossroads_18_infected_large_blob_020000_[3]_23.73_38.18",
     "logic": "Crossroads_18 + DREAMER"
   },
   {
-    "name": "BgObj-Crossroads_18_infected_large_blob_020000_[4]_28,7052_27,46823",
+    "name": "BgObj-Crossroads_18_infected_large_blob_020000_[4]_28.7052_27.46823",
     "logic": "Crossroads_18 + DREAMER"
   },
   {
-    "name": "BgObj-Crossroads_18_infected_large_blob_020000_[5]_6,642921_20,93887",
+    "name": "BgObj-Crossroads_18_infected_large_blob_020000_[5]_6.642921_20.93887",
     "logic": "Crossroads_18 + DREAMER"
   },
   {
-    "name": "BgObj-Crossroads_18_infected_large_blob_020000_[6]_3,5_32,28",
+    "name": "BgObj-Crossroads_18_infected_large_blob_020000_[6]_3.5_32.28",
     "logic": "Crossroads_18 + DREAMER"
   },
   {
-    "name": "BgObj-Crossroads_18_infected_large_blob_020000_[7]_2,6_31,6",
+    "name": "BgObj-Crossroads_18_infected_large_blob_020000_[7]_2.6_31.6",
     "logic": "Crossroads_18 + DREAMER"
   },
   {
-    "name": "BgObj-Crossroads_18_infected_large_blob_020000_[8]_10,57_34,59",
+    "name": "BgObj-Crossroads_18_infected_large_blob_020000_[8]_10.57_34.59",
     "logic": "Crossroads_18 + DREAMER"
   },
   {
-    "name": "BgObj-Crossroads_18_infected_large_blob_020000_[9]_12,59_11,46",
+    "name": "BgObj-Crossroads_18_infected_large_blob_020000_[9]_12.59_11.46",
     "logic": "Crossroads_18 + DREAMER"
   },
   {
-    "name": "BgObj-Crossroads_18_infected_large_blob_020000_31,32001_32,19404",
+    "name": "BgObj-Crossroads_18_infected_large_blob_020000_31.32001_32.19404",
     "logic": "Crossroads_18 + DREAMER"
   },
   {
-    "name": "BgObj-Crossroads_18_infected_large_blob_030000_[1]_29,21_46,53",
+    "name": "BgObj-Crossroads_18_infected_large_blob_030000_[1]_29.21_46.53",
     "logic": "Crossroads_18 + DREAMER"
   },
   {
-    "name": "BgObj-Crossroads_18_infected_large_blob_030000_[2]_21,03_36,28",
+    "name": "BgObj-Crossroads_18_infected_large_blob_030000_[2]_21.03_36.28",
     "logic": "Crossroads_18 + DREAMER"
   },
   {
-    "name": "BgObj-Crossroads_18_infected_large_blob_030000_[3]_32,89_24,79",
+    "name": "BgObj-Crossroads_18_infected_large_blob_030000_[3]_32.89_24.79",
     "logic": "Crossroads_18 + DREAMER"
   },
   {
-    "name": "BgObj-Crossroads_18_infected_large_blob_030000_[4]_35,5_21,15",
+    "name": "BgObj-Crossroads_18_infected_large_blob_030000_[4]_35.5_21.15",
     "logic": "Crossroads_18 + DREAMER"
   },
   {
-    "name": "BgObj-Crossroads_18_infected_large_blob_030000_[5]_36,37_41,34",
+    "name": "BgObj-Crossroads_18_infected_large_blob_030000_[5]_36.37_41.34",
     "logic": "Crossroads_18 + DREAMER"
   },
   {
-    "name": "BgObj-Crossroads_18_infected_large_blob_030000_[6]_32,99_32,88",
+    "name": "BgObj-Crossroads_18_infected_large_blob_030000_[6]_32.99_32.88",
     "logic": "Crossroads_18 + DREAMER"
   },
   {
-    "name": "BgObj-Crossroads_18_infected_large_blob_030000_[7]_13,04_5,76",
+    "name": "BgObj-Crossroads_18_infected_large_blob_030000_[7]_13.04_5.76",
     "logic": "Crossroads_18 + DREAMER"
   },
   {
-    "name": "BgObj-Crossroads_18_infected_large_blob_030000_33,88_44,11",
+    "name": "BgObj-Crossroads_18_infected_large_blob_030000_33.88_44.11",
     "logic": "Crossroads_18 + DREAMER"
   },
 //love tower,below
    {
-    "name": "BgObj-Ruins2_07_break_rag_[3]_95,68_13,19",
+    "name": "BgObj-Ruins2_07_break_rag_[3]_95.68_13.19",
     "logic": "Below_Love_Tower"
   },
   {
-    "name": "BgObj-Ruins2_07_break_rag_[2]_105,88_15,51",
+    "name": "BgObj-Ruins2_07_break_rag_[2]_105.88_15.51",
     "logic": "Below_Love_Tower"
   },
 //king's starion
   {
-    "name": "BgObj-Ruins2_08_break_rag_[2]_7,79_27,11",
+    "name": "BgObj-Ruins2_08_break_rag_[2]_7.79_27.11",
     "logic": "Ruins2_08[left1] + (LEFTCLAW|WINGS|(RIGHTCLAW+LEFTDASH))"
   },
 //watcher's tower,entry
 {
-  "name": "BgObj-Ruins2_01_b_break_rag_[10]_23,75_33,32",
+  "name": "BgObj-Ruins2_01_b_break_rag_[10]_23.75_33.32",
   "logic": "Ruins2_01_b[top1]"
 },
 {
-  "name": "BgObj-Ruins2_01_b_break_rag_[1]_22,9_43,62",
+  "name": "BgObj-Ruins2_01_b_break_rag_[1]_22.9_43.62",
   "logic": "Ruins2_01_b[top1]"
 },
 {
-  "name": "BgObj-Ruins2_01_b_Ruins_Trophy_Medium_[15]_21,67_38,71",
+  "name": "BgObj-Ruins2_01_b_Ruins_Trophy_Medium_[15]_21.67_38.71",
   "logic": "Ruins2_01_b[top1]"
 },
 {
-  "name": "BgObj-Ruins2_01_b_Ruins_Trophy_Large_[7]_23,04447_38,83118",
+  "name": "BgObj-Ruins2_01_b_Ruins_Trophy_Large_[7]_23.04447_38.83118",
   "logic": "Ruins2_01_b[top1]"
 },
 {
-  "name": "BgObj-Ruins2_01_b_Ruins_Trophy_Large_[6]_10,15_42,77",
+  "name": "BgObj-Ruins2_01_b_Ruins_Trophy_Large_[6]_10.15_42.77",
   "logic": "Ruins2_01_b[top1]"
 },
 {
-  "name": "BgObj-Ruins2_01_b_Trophy_Medium_[14]_5,48_42,73",
+  "name": "BgObj-Ruins2_01_b_Trophy_Medium_[14]_5.48_42.73",
   "logic": "Ruins2_01_b[top1]"
 },
 {
-  "name": "BgObj-Ruins2_01_b_Ruins_Urn_[7]_3,58_42,16",
+  "name": "BgObj-Ruins2_01_b_Ruins_Urn_[7]_3.58_42.16",
   "logic": "Ruins2_01_b[top1]"
 },
 {
-  "name": "BgObj-Ruins2_01_b_Trophy_[4]_11,89_42,57",
+  "name": "BgObj-Ruins2_01_b_Trophy_[4]_11.89_42.57",
   "logic": "Ruins2_01_b[top1]"
 },
 {
-  "name": "BgObj-Ruins2_01_b_Ruins_Urn_[8]_6,1_42,19",
+  "name": "BgObj-Ruins2_01_b_Ruins_Urn_[8]_6.1_42.19",
   "logic": "Ruins2_01_b[top1]"
 },
 //city fountain
 {
-  "name": "BgObj-Ruins1_27_Ruins_Acorn_76,93533_18,83442",
-  "logic": "Ruins1_27[left1] + ((RIGHTCLAW + (WINGS | $SLOPEBALL[before:AREASOUL,after:ROOMSOUL]) | LEFTCLAW + RIGHTSUPERDASH + $SHRIEKPOGO[before:AREASOUL,after:AREASOUL] | LEFTCLAW + RIGHTDASH + $SHRIEKPOGO[1,1,before:AREASOUL,after:AREASOUL] | RIGHTDASH + PRECISEMOVEMENT + $SHRIEKPOGO[3,before:AREASOUL,after:AREASOUL] | $SHRIEKPOGO[4,before:AREASOUL,after:AREASOUL,NOLEFTSTALL])|Lever-City_Fountain?FALSE+(ANYCLAW|WINGS))|Ruins1_27[right1]+(ANYCLAW|WINGS)"
+  "name": "BgObj-Ruins1_27_Ruins_Acorn_76.93533_18.83442",
+  "logic": "Ruins1_27[left1] + ((RIGHTCLAW + (WINGS | $SLOPEBALL[before:AREASOUL,after:ROOMSOUL]) | LEFTCLAW + RIGHTSUPERDASH + $SHRIEKPOGO[before:AREASOUL,after:AREASOUL] | LEFTCLAW + RIGHTDASH + $SHRIEKPOGO[1.1,before:AREASOUL,after:AREASOUL] | RIGHTDASH + PRECISEMOVEMENT + $SHRIEKPOGO[3,before:AREASOUL,after:AREASOUL] | $SHRIEKPOGO[4,before:AREASOUL,after:AREASOUL,NOLEFTSTALL])|Lever-City_Fountain?FALSE+(ANYCLAW|WINGS))|Ruins1_27[right1]+(ANYCLAW|WINGS)"
 },
 {
-  "name": "BgObj-Ruins1_27_Ruins_pole_wrought_seal_[1]_3,55059_6,132333",
+  "name": "BgObj-Ruins1_27_Ruins_pole_wrought_seal_[1]_3.55059_6.132333",
   "logic": "Ruins1_27[Left1]"
 },
 {
-  "name": "BgObj-Ruins1_27_Ruins_pole_wrought_seal_49,91553_24,37178",
-  "logic": "Ruins1_27[left1] + ((RIGHTCLAW + (WINGS | $SLOPEBALL[before:AREASOUL,after:ROOMSOUL]) | LEFTCLAW + RIGHTSUPERDASH + $SHRIEKPOGO[before:AREASOUL,after:AREASOUL] | LEFTCLAW + RIGHTDASH + $SHRIEKPOGO[1,1,before:AREASOUL,after:AREASOUL] | RIGHTDASH + PRECISEMOVEMENT + $SHRIEKPOGO[3,before:AREASOUL,after:AREASOUL] | $SHRIEKPOGO[4,before:AREASOUL,after:AREASOUL,NOLEFTSTALL])|Lever-City_Fountain?FALSE+(ANYCLAW|WINGS))|Ruins1_27[right1]+(ANYCLAW|WINGS)"
+  "name": "BgObj-Ruins1_27_Ruins_pole_wrought_seal_49.91553_24.37178",
+  "logic": "Ruins1_27[left1] + ((RIGHTCLAW + (WINGS | $SLOPEBALL[before:AREASOUL,after:ROOMSOUL]) | LEFTCLAW + RIGHTSUPERDASH + $SHRIEKPOGO[before:AREASOUL,after:AREASOUL] | LEFTCLAW + RIGHTDASH + $SHRIEKPOGO[1.1,before:AREASOUL,after:AREASOUL] | RIGHTDASH + PRECISEMOVEMENT + $SHRIEKPOGO[3,before:AREASOUL,after:AREASOUL] | $SHRIEKPOGO[4,before:AREASOUL,after:AREASOUL,NOLEFTSTALL])|Lever-City_Fountain?FALSE+(ANYCLAW|WINGS))|Ruins1_27[right1]+(ANYCLAW|WINGS)"
 },
 {
-  "name": "BgObj-Ruins1_27_Ruins_pole_wrought_spiral_50,83317_24,31756",
-  "logic": "Ruins1_27[left1] + ((RIGHTCLAW + (WINGS | $SLOPEBALL[before:AREASOUL,after:ROOMSOUL]) | LEFTCLAW + RIGHTSUPERDASH + $SHRIEKPOGO[before:AREASOUL,after:AREASOUL] | LEFTCLAW + RIGHTDASH + $SHRIEKPOGO[1,1,before:AREASOUL,after:AREASOUL] | RIGHTDASH + PRECISEMOVEMENT + $SHRIEKPOGO[3,before:AREASOUL,after:AREASOUL] | $SHRIEKPOGO[4,before:AREASOUL,after:AREASOUL,NOLEFTSTALL])|Lever-City_Fountain?FALSE+(ANYCLAW|WINGS))|Ruins1_27[right1]+(ANYCLAW|WINGS)"
+  "name": "BgObj-Ruins1_27_Ruins_pole_wrought_spiral_50.83317_24.31756",
+  "logic": "Ruins1_27[left1] + ((RIGHTCLAW + (WINGS | $SLOPEBALL[before:AREASOUL,after:ROOMSOUL]) | LEFTCLAW + RIGHTSUPERDASH + $SHRIEKPOGO[before:AREASOUL,after:AREASOUL] | LEFTCLAW + RIGHTDASH + $SHRIEKPOGO[1.1,before:AREASOUL,after:AREASOUL] | RIGHTDASH + PRECISEMOVEMENT + $SHRIEKPOGO[3,before:AREASOUL,after:AREASOUL] | $SHRIEKPOGO[4,before:AREASOUL,after:AREASOUL,NOLEFTSTALL])|Lever-City_Fountain?FALSE+(ANYCLAW|WINGS))|Ruins1_27[right1]+(ANYCLAW|WINGS)"
 },
 {
-  "name": "BgObj-Ruins1_27_Ruins_Trophy_Large_[1]_68,51991_23,73448",
-  "logic": "Ruins1_27[left1] + ((RIGHTCLAW + (WINGS | $SLOPEBALL[before:AREASOUL,after:ROOMSOUL]) | LEFTCLAW + RIGHTSUPERDASH + $SHRIEKPOGO[before:AREASOUL,after:AREASOUL] | LEFTCLAW + RIGHTDASH + $SHRIEKPOGO[1,1,before:AREASOUL,after:AREASOUL] | RIGHTDASH + PRECISEMOVEMENT + $SHRIEKPOGO[3,before:AREASOUL,after:AREASOUL] | $SHRIEKPOGO[4,before:AREASOUL,after:AREASOUL,NOLEFTSTALL])|Lever-City_Fountain?FALSE+(ANYCLAW|WINGS))|Ruins1_27[right1]+(ANYCLAW|WINGS)"
+  "name": "BgObj-Ruins1_27_Ruins_Trophy_Large_[1]_68.51991_23.73448",
+  "logic": "Ruins1_27[left1] + ((RIGHTCLAW + (WINGS | $SLOPEBALL[before:AREASOUL,after:ROOMSOUL]) | LEFTCLAW + RIGHTSUPERDASH + $SHRIEKPOGO[before:AREASOUL,after:AREASOUL] | LEFTCLAW + RIGHTDASH + $SHRIEKPOGO[1.1,before:AREASOUL,after:AREASOUL] | RIGHTDASH + PRECISEMOVEMENT + $SHRIEKPOGO[3,before:AREASOUL,after:AREASOUL] | $SHRIEKPOGO[4,before:AREASOUL,after:AREASOUL,NOLEFTSTALL])|Lever-City_Fountain?FALSE+(ANYCLAW|WINGS))|Ruins1_27[right1]+(ANYCLAW|WINGS)"
 },
 {
-  "name": "BgObj-Ruins1_27_Ruins_Trophy_Large_[3]_64,42_5,63",
-  "logic": "(Ruins1_27[left1] + (RIGHTCLAW + (WINGS | $SLOPEBALL[before:AREASOUL,after:ROOMSOUL]) | LEFTCLAW + RIGHTSUPERDASH + $SHRIEKPOGO[before:AREASOUL,after:AREASOUL] | LEFTCLAW + RIGHTDASH + $SHRIEKPOGO[1,1,before:AREASOUL,after:AREASOUL] | RIGHTDASH + PRECISEMOVEMENT + $SHRIEKPOGO[3,before:AREASOUL,after:AREASOUL] | $SHRIEKPOGO[4,before:AREASOUL,after:AREASOUL,NOLEFTSTALL]))|Lever-City_Fountain?FALSE)|Ruins1_27[right1]"
+  "name": "BgObj-Ruins1_27_Ruins_Trophy_Large_[3]_64.42_5.63",
+  "logic": "(Ruins1_27[left1] + (RIGHTCLAW + (WINGS | $SLOPEBALL[before:AREASOUL,after:ROOMSOUL]) | LEFTCLAW + RIGHTSUPERDASH + $SHRIEKPOGO[before:AREASOUL,after:AREASOUL] | LEFTCLAW + RIGHTDASH + $SHRIEKPOGO[1.1,before:AREASOUL,after:AREASOUL] | RIGHTDASH + PRECISEMOVEMENT + $SHRIEKPOGO[3,before:AREASOUL,after:AREASOUL] | $SHRIEKPOGO[4,before:AREASOUL,after:AREASOUL,NOLEFTSTALL]))|Lever-City_Fountain?FALSE)|Ruins1_27[right1]"
 },
 {
-  "name": "BgObj-Ruins1_27_Ruins_Trophy_Large_68,22972_15,61226",
-  "logic": "Ruins1_27[left1] + ((RIGHTCLAW + (WINGS | $SLOPEBALL[before:AREASOUL,after:ROOMSOUL]) | LEFTCLAW + RIGHTSUPERDASH + $SHRIEKPOGO[before:AREASOUL,after:AREASOUL] | LEFTCLAW + RIGHTDASH + $SHRIEKPOGO[1,1,before:AREASOUL,after:AREASOUL] | RIGHTDASH + PRECISEMOVEMENT + $SHRIEKPOGO[3,before:AREASOUL,after:AREASOUL] | $SHRIEKPOGO[4,before:AREASOUL,after:AREASOUL,NOLEFTSTALL])|Lever-City_Fountain?FALSE+(ANYCLAW|WINGS))|Ruins1_27[right1]+(ANYCLAW|WINGS)"
+  "name": "BgObj-Ruins1_27_Ruins_Trophy_Large_68.22972_15.61226",
+  "logic": "Ruins1_27[left1] + ((RIGHTCLAW + (WINGS | $SLOPEBALL[before:AREASOUL,after:ROOMSOUL]) | LEFTCLAW + RIGHTSUPERDASH + $SHRIEKPOGO[before:AREASOUL,after:AREASOUL] | LEFTCLAW + RIGHTDASH + $SHRIEKPOGO[1.1,before:AREASOUL,after:AREASOUL] | RIGHTDASH + PRECISEMOVEMENT + $SHRIEKPOGO[3,before:AREASOUL,after:AREASOUL] | $SHRIEKPOGO[4,before:AREASOUL,after:AREASOUL,NOLEFTSTALL])|Lever-City_Fountain?FALSE+(ANYCLAW|WINGS))|Ruins1_27[right1]+(ANYCLAW|WINGS)"
 },
 {
-  "name": "BgObj-Ruins1_27_Ruins_Trophy_Medium_68,06_5,62",
-  "logic": "(Ruins1_27[left1] + (RIGHTCLAW + (WINGS | $SLOPEBALL[before:AREASOUL,after:ROOMSOUL]) | LEFTCLAW + RIGHTSUPERDASH + $SHRIEKPOGO[before:AREASOUL,after:AREASOUL] | LEFTCLAW + RIGHTDASH + $SHRIEKPOGO[1,1,before:AREASOUL,after:AREASOUL] | RIGHTDASH + PRECISEMOVEMENT + $SHRIEKPOGO[3,before:AREASOUL,after:AREASOUL] | $SHRIEKPOGO[4,before:AREASOUL,after:AREASOUL,NOLEFTSTALL]))|Lever-City_Fountain?FALSE)|Ruins1_27[right1]"
+  "name": "BgObj-Ruins1_27_Ruins_Trophy_Medium_68.06_5.62",
+  "logic": "(Ruins1_27[left1] + (RIGHTCLAW + (WINGS | $SLOPEBALL[before:AREASOUL,after:ROOMSOUL]) | LEFTCLAW + RIGHTSUPERDASH + $SHRIEKPOGO[before:AREASOUL,after:AREASOUL] | LEFTCLAW + RIGHTDASH + $SHRIEKPOGO[1.1,before:AREASOUL,after:AREASOUL] | RIGHTDASH + PRECISEMOVEMENT + $SHRIEKPOGO[3,before:AREASOUL,after:AREASOUL] | $SHRIEKPOGO[4,before:AREASOUL,after:AREASOUL,NOLEFTSTALL]))|Lever-City_Fountain?FALSE)|Ruins1_27[right1]"
 },
 {
-  "name": "BgObj-Ruins1_27_Ruins_Trophy_66,1_15,51",
-  "logic": "Ruins1_27[left1] + ((RIGHTCLAW + (WINGS | $SLOPEBALL[before:AREASOUL,after:ROOMSOUL]) | LEFTCLAW + RIGHTSUPERDASH + $SHRIEKPOGO[before:AREASOUL,after:AREASOUL] | LEFTCLAW + RIGHTDASH + $SHRIEKPOGO[1,1,before:AREASOUL,after:AREASOUL] | RIGHTDASH + PRECISEMOVEMENT + $SHRIEKPOGO[3,before:AREASOUL,after:AREASOUL] | $SHRIEKPOGO[4,before:AREASOUL,after:AREASOUL,NOLEFTSTALL])|Lever-City_Fountain?FALSE+(ANYCLAW|WINGS))|Ruins1_27[right1]+(ANYCLAW|WINGS)"
+  "name": "BgObj-Ruins1_27_Ruins_Trophy_66.1_15.51",
+  "logic": "Ruins1_27[left1] + ((RIGHTCLAW + (WINGS | $SLOPEBALL[before:AREASOUL,after:ROOMSOUL]) | LEFTCLAW + RIGHTSUPERDASH + $SHRIEKPOGO[before:AREASOUL,after:AREASOUL] | LEFTCLAW + RIGHTDASH + $SHRIEKPOGO[1.1,before:AREASOUL,after:AREASOUL] | RIGHTDASH + PRECISEMOVEMENT + $SHRIEKPOGO[3,before:AREASOUL,after:AREASOUL] | $SHRIEKPOGO[4,before:AREASOUL,after:AREASOUL,NOLEFTSTALL])|Lever-City_Fountain?FALSE+(ANYCLAW|WINGS))|Ruins1_27[right1]+(ANYCLAW|WINGS)"
 },
 {
-  "name": "BgObj-Ruins1_27_break_rag_[1]_64,15_26,73",
-  "logic": "Ruins1_27[left1] + ((RIGHTCLAW + (WINGS | $SLOPEBALL[before:AREASOUL,after:ROOMSOUL]) | LEFTCLAW + RIGHTSUPERDASH + $SHRIEKPOGO[before:AREASOUL,after:AREASOUL] | LEFTCLAW + RIGHTDASH + $SHRIEKPOGO[1,1,before:AREASOUL,after:AREASOUL] | RIGHTDASH + PRECISEMOVEMENT + $SHRIEKPOGO[3,before:AREASOUL,after:AREASOUL] | $SHRIEKPOGO[4,before:AREASOUL,after:AREASOUL,NOLEFTSTALL])|Lever-City_Fountain?FALSE+(ANYCLAW|WINGS))|Ruins1_27[right1]+(ANYCLAW|WINGS)"
+  "name": "BgObj-Ruins1_27_break_rag_[1]_64.15_26.73",
+  "logic": "Ruins1_27[left1] + ((RIGHTCLAW + (WINGS | $SLOPEBALL[before:AREASOUL,after:ROOMSOUL]) | LEFTCLAW + RIGHTSUPERDASH + $SHRIEKPOGO[before:AREASOUL,after:AREASOUL] | LEFTCLAW + RIGHTDASH + $SHRIEKPOGO[1.1,before:AREASOUL,after:AREASOUL] | RIGHTDASH + PRECISEMOVEMENT + $SHRIEKPOGO[3,before:AREASOUL,after:AREASOUL] | $SHRIEKPOGO[4,before:AREASOUL,after:AREASOUL,NOLEFTSTALL])|Lever-City_Fountain?FALSE+(ANYCLAW|WINGS))|Ruins1_27[right1]+(ANYCLAW|WINGS)"
 },
 {
-  "name": "BgObj-Ruins1_27_break_rag_69,98_7,44",
-  "logic": "(Ruins1_27[left1] + (RIGHTCLAW + (WINGS | $SLOPEBALL[before:AREASOUL,after:ROOMSOUL]) | LEFTCLAW + RIGHTSUPERDASH + $SHRIEKPOGO[before:AREASOUL,after:AREASOUL] | LEFTCLAW + RIGHTDASH + $SHRIEKPOGO[1,1,before:AREASOUL,after:AREASOUL] | RIGHTDASH + PRECISEMOVEMENT + $SHRIEKPOGO[3,before:AREASOUL,after:AREASOUL] | $SHRIEKPOGO[4,before:AREASOUL,after:AREASOUL,NOLEFTSTALL]))|Lever-City_Fountain?FALSE)|Ruins1_27[right1]"
+  "name": "BgObj-Ruins1_27_break_rag_69.98_7.44",
+  "logic": "(Ruins1_27[left1] + (RIGHTCLAW + (WINGS | $SLOPEBALL[before:AREASOUL,after:ROOMSOUL]) | LEFTCLAW + RIGHTSUPERDASH + $SHRIEKPOGO[before:AREASOUL,after:AREASOUL] | LEFTCLAW + RIGHTDASH + $SHRIEKPOGO[1.1,before:AREASOUL,after:AREASOUL] | RIGHTDASH + PRECISEMOVEMENT + $SHRIEKPOGO[3,before:AREASOUL,after:AREASOUL] | $SHRIEKPOGO[4,before:AREASOUL,after:AREASOUL,NOLEFTSTALL]))|Lever-City_Fountain?FALSE)|Ruins1_27[right1]"
 }
 ]
 
