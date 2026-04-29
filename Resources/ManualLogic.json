@@ -516,7 +516,7 @@
   },
   {
     "location": "BgObj-Ruins1_27_break_rag_69.98_7.44",
-    "logic": "(Ruins1_27[left1] + (RIGHTCLAW + (WINGS | $SLOPEBALL[before:AREASOUL,after:ROOMSOUL]) | LEFTCLAW + RIGHTSUPERDASH + $SHRIEKPOGO[before:AREASOUL,after:AREASOUL] | LEFTCLAW + RIGHTDASH + $SHRIEKPOGO[1,1,before:AREASOUL,after:AREASOUL] | RIGHTDASH + PRECISEMOVEMENT + $SHRIEKPOGO[3,before:AREASOUL,after:AREASOUL] | $SHRIEKPOGO[4,before:AREASOUL,after:AREASOUL,NOLEFTSTALL]))|Lever-City_Fountain?FALSE)|Ruins1_27[right1]"
+    "logic": "(Ruins1_27[left1] + (RIGHTCLAW + (WINGS | $SLOPEBALL[before:AREASOUL,after:ROOMSOUL]) | LEFTCLAW + RIGHTSUPERDASH + $SHRIEKPOGO[before:AREASOUL,after:AREASOUL] | LEFTCLAW + RIGHTDASH + $SHRIEKPOGO[1,1,before:AREASOUL,after:AREASOUL] | RIGHTDASH + PRECISEMOVEMENT + $SHRIEKPOGO[3,before:AREASOUL,after:AREASOUL] | $SHRIEKPOGO[4,before:AREASOUL,after:AREASOUL,NOLEFTSTALL])|Lever-City_Fountain?FALSE)|Ruins1_27[right1]"
   },
   {
     "location": "BgObj-Ruins1_27_Ruins_Acorn_76.93533_18.83442",
@@ -524,7 +524,7 @@
   },
   {
     "location": "BgObj-Ruins1_27_Ruins_pole_wrought_seal_[1]_3.55059_6.132333",
-    "logic": "Ruins1_27[Left1]"
+    "logic": "Ruins1_27[left1]"
   },
   {
     "location": "BgObj-Ruins1_27_Ruins_pole_wrought_seal_49.91553_24.37178",
@@ -544,7 +544,7 @@
   },
   {
     "location": "BgObj-Ruins1_27_Ruins_Trophy_Large_[3]_64.42_5.63",
-    "logic": "(Ruins1_27[left1] + (RIGHTCLAW + (WINGS | $SLOPEBALL[before:AREASOUL,after:ROOMSOUL]) | LEFTCLAW + RIGHTSUPERDASH + $SHRIEKPOGO[before:AREASOUL,after:AREASOUL] | LEFTCLAW + RIGHTDASH + $SHRIEKPOGO[1,1,before:AREASOUL,after:AREASOUL] | RIGHTDASH + PRECISEMOVEMENT + $SHRIEKPOGO[3,before:AREASOUL,after:AREASOUL] | $SHRIEKPOGO[4,before:AREASOUL,after:AREASOUL,NOLEFTSTALL]))|Lever-City_Fountain?FALSE)|Ruins1_27[right1]"
+    "logic": "(Ruins1_27[left1] + (RIGHTCLAW + (WINGS | $SLOPEBALL[before:AREASOUL,after:ROOMSOUL]) | LEFTCLAW + RIGHTSUPERDASH + $SHRIEKPOGO[before:AREASOUL,after:AREASOUL] | LEFTCLAW + RIGHTDASH + $SHRIEKPOGO[1,1,before:AREASOUL,after:AREASOUL] | RIGHTDASH + PRECISEMOVEMENT + $SHRIEKPOGO[3,before:AREASOUL,after:AREASOUL] | $SHRIEKPOGO[4,before:AREASOUL,after:AREASOUL,NOLEFTSTALL])|Lever-City_Fountain?FALSE)|Ruins1_27[right1]"
   },
   {
     "location": "BgObj-Ruins1_27_Ruins_Trophy_Large_68.22972_15.61226",
@@ -552,7 +552,7 @@
   },
   {
     "location": "BgObj-Ruins1_27_Ruins_Trophy_Medium_68.06_5.62",
-    "logic": "(Ruins1_27[left1] + (RIGHTCLAW + (WINGS | $SLOPEBALL[before:AREASOUL,after:ROOMSOUL]) | LEFTCLAW + RIGHTSUPERDASH + $SHRIEKPOGO[before:AREASOUL,after:AREASOUL] | LEFTCLAW + RIGHTDASH + $SHRIEKPOGO[1,1,before:AREASOUL,after:AREASOUL] | RIGHTDASH + PRECISEMOVEMENT + $SHRIEKPOGO[3,before:AREASOUL,after:AREASOUL] | $SHRIEKPOGO[4,before:AREASOUL,after:AREASOUL,NOLEFTSTALL]))|Lever-City_Fountain?FALSE)|Ruins1_27[right1]"
+    "logic": "(Ruins1_27[left1] + (RIGHTCLAW + (WINGS | $SLOPEBALL[before:AREASOUL,after:ROOMSOUL]) | LEFTCLAW + RIGHTSUPERDASH + $SHRIEKPOGO[before:AREASOUL,after:AREASOUL] | LEFTCLAW + RIGHTDASH + $SHRIEKPOGO[1,1,before:AREASOUL,after:AREASOUL] | RIGHTDASH + PRECISEMOVEMENT + $SHRIEKPOGO[3,before:AREASOUL,after:AREASOUL] | $SHRIEKPOGO[4,before:AREASOUL,after:AREASOUL,NOLEFTSTALL])|Lever-City_Fountain?FALSE)|Ruins1_27[right1]"
   },
   //outside shade soul
   {
