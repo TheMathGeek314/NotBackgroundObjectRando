@@ -26,3 +26,8 @@ namespace NotBackgroundObjectRando {
 //technically breakable objects that don't fit into a convenient formula
 //fsm("Crossroads Sign Control") in c01
 //Crossroads_27/Direction Pole Tram/"FSM"
+
+//Incomplete list of locations that dissapear with bench or stag rando
+//BgObj-Fungus1_36_green_grass_1[1]_22,14_2,85 with "stone sactuarry" bench. 
+//Something and a zote bench in city bridge,left of storerooms. 
+//quirrel peak bench/stag.
