@@ -4,6 +4,7 @@ using System.Linq;
 using System.Reflection;
 using ItemChanger;
 using RandomizerCore;
+using RandomizerCore.Json;
 using RandomizerCore.Logic;
 using RandomizerCore.LogicItems;
 using RandomizerMod.RC;

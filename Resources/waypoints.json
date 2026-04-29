@@ -1,5 +1,5 @@
 [
-//city brige
+  //city bridge
   {
     "name": "City_Bridge_Above_Fountain_Right_Side",
     "logic": "(Ruins1_18[right1] | (Ruins1_18[left1] + Lever-City_Bridge_Above_Fountain?FALSE))"
@@ -8,12 +8,12 @@
     "name": "City_Bridge_Above_Fountain_Bottom",
     "logic": "(Ruins1_18[right2])"
   },
-//stone sancturary
+  //stone sanctuary
   {
   "name": "Stone_Sanctuary_Internal",
   "logic": "((Fungus1_35[left1] | Fungus1_35[right1]) + (DARKROOMS | LANTERN))"
   },
-//love tower
+  //love tower
   {
   "name": "Below_Love_Tower",
   "logic": "((Ruins2_07[left1] | Stag-Flooded_Station + Can_Stag) + (SWIM | RIGHTSKIPACID | (COMPLEXSKIPS + ACIDSKIPS + RIGHTDASH + WINGS + (SPELLAIRSTALL + $CASTSPELL | RIGHTSHARPSHADOW))) | Ruins2_07[top1] | Ruins2_07[right1]+(LEFTCLAW|WINGS|LEFTDASH))"

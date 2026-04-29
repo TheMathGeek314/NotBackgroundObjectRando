@@ -55,11 +55,13 @@
     <None Remove="Resources\BackgroundData.json" />
     <None Remove="Resources\ManualLogic.json" />
     <None Remove="Resources\pin_barrel.png" />
+    <None Remove="Resources\waypoints.json" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\BackgroundData.json" />
     <EmbeddedResource Include="Resources\ManualLogic.json" />
     <EmbeddedResource Include="Resources\pin_barrel.png" />
+    <EmbeddedResource Include="Resources\waypoints.json" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Assembly-CSharp">
@@ -106,6 +108,9 @@
     </Reference>
     <Reference Include="RandomizerCore">
       <HintPath>..\_dependencies\RandomizerCore.dll</HintPath>
+    </Reference>
+    <Reference Include="RandomizerCore.Json">
+      <HintPath>..\_dependencies\RandomizerCore.Json.dll</HintPath>
     </Reference>
     <Reference Include="RandomizerMod">
       <HintPath>..\_dependencies\RandomizerMod.dll</HintPath>

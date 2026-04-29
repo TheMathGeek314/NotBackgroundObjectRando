@@ -5,7 +5,7 @@ using UnityEngine;
 namespace NotBackgroundObjectRando {
     public class NotBackgroundObjectRando: Mod, IGlobalSettings<GlobalSettings> {
         new public string GetName() => "NotBackgroundObjectRando";
-        public override string GetVersion() => "1.0.0.0";
+        public override string GetVersion() => "1.0.1.0";
 
         public static GlobalSettings globalSettings { get; set; } = new();
         public void OnLoadGlobal(GlobalSettings s) => globalSettings = s;
@@ -27,7 +27,7 @@ namespace NotBackgroundObjectRando {
 //fsm("Crossroads Sign Control") in c01
 //Crossroads_27/Direction Pole Tram/"FSM"
 
-//Incomplete list of locations that dissapear with bench or stag rando
-//BgObj-Fungus1_36_green_grass_1[1]_22,14_2,85 with "stone sactuarry" bench. 
+//Incomplete list of locations that disappear with bench or stag rando
+//BgObj-Fungus1_36_green_grass_1[1]_22.14_2.85 with "stone sanctuary" bench. 
 //Something and a zote bench in city bridge,left of storerooms. 
 //quirrel peak bench/stag.
